@@ -50,18 +50,20 @@ public class GameManager : MonoBehaviour
 
     public void OnGoal()
     {
-        counter++;
-        Debug.Log("Counter: " + counter);
         Debug.Log("GOAL REACHED!");
         LoadNextLevel();
     }
 
     public void StartGame()
     {
-        counter++;
-        Debug.Log("Counter: " + counter);
         Debug.Log("Start game");
         LoadNextLevel();
+    }
+
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        //Cursor.visible = true;
     }
 
     public void QuitGame()
@@ -73,6 +75,6 @@ public class GameManager : MonoBehaviour
     {
         var current = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(current + 1);
-        Cursor.visible = true;
+        //Cursor.visible = true;
     }
 }

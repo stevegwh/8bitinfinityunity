@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ed6f97166a0a3b4aadb285f76a3fb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onCollision:
+  onTriggerEnter:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1696857728691772399, guid: 5ebc977cc9a0b8147b4bc786db2ea7dd, type: 3}
@@ -139,5 +139,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onTriggerExit:
+    m_PersistentCalls:
+      m_Calls: []
   validCollisions:
   - {fileID: 3038312801236101193, guid: 93706d63f04faec4b99815d02fe80252, type: 3}
