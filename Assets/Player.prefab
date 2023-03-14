@@ -178,4 +178,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fe4e17e7a98bb94e8e547f37e6af3bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitbox: {x: 0.5, y: 0.5}
+  hitbox: {x: 0.3, y: 0.3}
