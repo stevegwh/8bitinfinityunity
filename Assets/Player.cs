@@ -10,8 +10,8 @@ public class Player : MonoBehaviour
     private bool startFollowMouse;
     private readonly float speed = 2.5f;
     [SerializeField] private Vector2 hitbox = new (0.5f, 0.5f);
-    [SerializeField] private AudioSource footstepsAudioSource;
-    [SerializeField] private AudioSource finalFootstepAudioSource;  
+    // [SerializeField] private AudioSource footstepsAudioSource;
+    // [SerializeField] private AudioSource finalFootstepAudioSource;  
     private bool hasPlayedFinalFootstep;
     private void Awake()
     {
@@ -37,6 +37,7 @@ public class Player : MonoBehaviour
 
     public void OnDeath()
     {
+        if (!startFollowMouse) return;
         GameManager.Instance.RestartLevel();
     }
 
