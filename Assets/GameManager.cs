@@ -46,8 +46,6 @@ public class GameManager : MonoBehaviour
         }
     }
  
-    // implement your Awake, Start, Update, or other methods here...
-
     public void OnGoal()
     {
         Debug.Log("GOAL REACHED!");
@@ -56,7 +54,7 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
-        Debug.Log("Start game");
+        GetComponent<AudioSource>().Play();
         LoadNextLevel();
     }
 
