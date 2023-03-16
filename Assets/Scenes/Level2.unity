@@ -4108,7 +4108,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3642007666497078156, guid: 7da02b8713694cd4196d0a236044ef25, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.900001
+      value: 9.12
       objectReference: {fileID: 0}
     - target: {fileID: 3642007666497078156, guid: 7da02b8713694cd4196d0a236044ef25, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4145,14 +4145,6 @@ PrefabInstance:
     - target: {fileID: 3642007666497078160, guid: 7da02b8713694cd4196d0a236044ef25, type: 3}
       propertyPath: m_Name
       value: Goal
-      objectReference: {fileID: 0}
-    - target: {fileID: 3642007666497078162, guid: 7da02b8713694cd4196d0a236044ef25, type: 3}
-      propertyPath: m_Size.x
-      value: 2.1743221
-      objectReference: {fileID: 0}
-    - target: {fileID: 3642007666497078162, guid: 7da02b8713694cd4196d0a236044ef25, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.085772514
       objectReference: {fileID: 0}
     - target: {fileID: 3642007666497078163, guid: 7da02b8713694cd4196d0a236044ef25, type: 3}
       propertyPath: validCollisions.Array.data[0]

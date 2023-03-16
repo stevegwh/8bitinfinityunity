@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2048
     height: 1060.8
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Project
   m_RootView: {fileID: 7}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 673.6
     width: 936.8
     height: 337.20007
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -75,7 +75,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 59
+  controlID: 32
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -230,7 +230,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 251
+  controlID: 155
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -424,7 +424,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 0
@@ -438,7 +438,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: f0590000
     m_LastClickedID: 23024
-    m_ExpandedIDs: 0000000060630000626300006463000066630000686300006a630000
+    m_ExpandedIDs: 000000005a6400005c6400005e64000060640000626400006464000066640000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -466,7 +466,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff0000000060630000626300006463000066630000686300006a630000dc210100
+    m_ExpandedIDs: ffffffff000000005a6400005c6400005e64000060640000626400006464000066640000d6640000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -647,8 +647,8 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: -100, y: -25.599976}
-      snapOffsetDelta: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: -100, y: -25.599976}
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -669,7 +669,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 24.8}
+      snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-scene-view-toolbar
@@ -702,7 +702,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 24.8}
+      snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Tilemap Focus
@@ -713,7 +713,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 24.8}
+      snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-transform-toolbar
@@ -972,23 +972,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: a0090000
       m_LastClickedID: 0
-      m_ExpandedIDs: 6abcfbffa4bcfbff86c9fbffd2c9fbff08ccfbff52ccfbffa0ccfbff6ecdfbff24cefbff92cefbfff6cefbff0ccffbffb6d3fbff06d4fbff04dafbffa4dafbff48dbfbff50dcfbffbaddfbff3e06fcff3214fcff6a14fcffb622fcffd622fcffce2afcff584afcff924afcfff666fcff7e68fcff3669fcfff269fcffb06afcfff06bfcffae6cfcfff06dfcff346ffcffe070fcff4472fcffae79fcff767afcff447bfcff347cfcffec7cfcffac7dfcff6e7efcffb27ffcffde80fcffc281fcff8a82fcff4884fcfff084fcffb285fcff7c86fcff2687fcfff087fcff1c89fcff228afcff4a8bfcffae8bfcff7a8cfcff7efcfcffe003fdffb804fdff1013fdff4025fdff3826fdff4c27fdff1828fdffe228fdffba29fdff842afdff502bfdff9e2cfdffd42dfdffea2efdffc22ffdff8c30fdff5831fdffa632fdffdc33fdffca34fdff1836fdff4e37fdff463afdff943bfdff0e46fdff0e49fdff104bfdffda4bfdffa64cfdff764dfdffc44efdff8889fdff1e8bfdff6e8dfdff3a8efdff108ffdff569cfdff449dfdff9ea4fdff24adfdffd6b5fdffdce7fdff1ae9fdff6404feff4814feff382afefff82efeffc02ffeffc636feff3a3dfeff1245feff8845feff7c2fffff4a30ffff5430ffff0a31ffffaa3cffffe443ffff7a45ffffa6bcffff78c3ffff34c9ffffe6cbffff78cdffff30ceffff32cfffffe6daffff60e4ffffaeedffffccedfffffaeeffffe8f8ffff24fbfffff4ffffff666600007c6600009e660000a4660000b0660000b6660000e6660000ee820000008300000e9d0000aaeb000040500100be6e010066740100ce7501004eaa0100
+      m_ExpandedIDs: 24fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 'Bg '
-        m_OriginalName: 'Bg '
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -197540
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 6}
       m_SearchString: 

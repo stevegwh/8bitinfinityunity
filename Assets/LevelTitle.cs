@@ -7,7 +7,7 @@ public class LevelTitle : MonoBehaviour
     [SerializeField] private GameObject player;
     [SerializeField] private TextMeshProUGUI text;
 
-    private string[] failText =
+    private readonly string[] failText =
     {
         "Try again...",
         "Come on, now",
@@ -25,11 +25,11 @@ public class LevelTitle : MonoBehaviour
         if (GameManager.levelRestartCounter > 0) SetFailText();
         background.sortingOrder = 2;
         player.gameObject.SetActive(false);
-        Invoke(nameof(DisableTitleText), 0.5f);
+        Invoke(nameof(DisableTitleText), 0.75f);
         
     }
 
-    public void SetFailText()
+    private void SetFailText()
     {
         var i = GameManager.levelRestartCounter - 1 >= failText.Length - 1
             ? failText.Length - 1

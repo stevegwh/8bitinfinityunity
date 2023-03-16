@@ -20,7 +20,6 @@ public class Player : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log("Clicked!");
         startFollowMouse = true;
         GetComponent<BoxCollider2D>().size = hitbox;
         //  Cursor.visible = false;

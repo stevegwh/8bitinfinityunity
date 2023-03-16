@@ -3,9 +3,8 @@ using UnityEngine.InputSystem;
 
 public class BooCat : MonoBehaviour
 {
-    [SerializeField] private GameObject player;
     [SerializeField] private float speed = 3f;
-    [SerializeField] private Player playerScript;
+    [SerializeField] private Player player;
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Sprite evilSprite;
     [SerializeField] private Sprite goodSprite;
@@ -19,7 +18,7 @@ public class BooCat : MonoBehaviour
     
     void Update()
     {
-        if (!playerScript.startFollowMouse) return;
+        if (!player.startFollowMouse) return;
         float step = speed * Time.deltaTime;
         var mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
         var playerPos = player.transform.position;
