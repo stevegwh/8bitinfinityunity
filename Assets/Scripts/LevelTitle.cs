@@ -6,6 +6,7 @@ public class LevelTitle : MonoBehaviour
     [SerializeField] private SpriteRenderer background;
     [SerializeField] private GameObject player;
     [SerializeField] private TextMeshProUGUI text;
+    [SerializeField] private float textSpeed = 1f;
 
     private readonly string[] failText =
     {
@@ -23,9 +24,9 @@ public class LevelTitle : MonoBehaviour
     void Start()
     {
         if (GameManager.levelRestartCounter > 0) SetFailText();
-        background.sortingOrder = 2;
+        background.sortingOrder = 10;
         player.gameObject.SetActive(false);
-        Invoke(nameof(DisableTitleText), 0.75f);
+        Invoke(nameof(DisableTitleText), textSpeed);
         
     }
 

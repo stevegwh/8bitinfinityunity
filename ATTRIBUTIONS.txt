@@ -1,0 +1,2 @@
+Font: awe-mono-gold-v2 (https://somepx.itch.io/humble-fonts-gold-ii)
+SFX: https://beepyeah.itch.io/8-bit-sfx-pack

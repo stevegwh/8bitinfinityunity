@@ -8029,6 +8029,18 @@ PrefabInstance:
       propertyPath: validCollisions.Array.data[0]
       value: 
       objectReference: {fileID: 811932426}
+    - target: {fileID: 3642007666497078163, guid: 7da02b8713694cd4196d0a236044ef25, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1491954086}
+    - target: {fileID: 3642007666497078163, guid: 7da02b8713694cd4196d0a236044ef25, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnGoal
+      objectReference: {fileID: 0}
+    - target: {fileID: 3642007666497078163, guid: 7da02b8713694cd4196d0a236044ef25, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Player, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7da02b8713694cd4196d0a236044ef25, type: 3}
 --- !u!1001 &7691681873550930424

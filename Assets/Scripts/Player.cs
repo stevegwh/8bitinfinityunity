@@ -10,6 +10,10 @@ public class Player : MonoBehaviour
     public bool startFollowMouse;
     [SerializeField] private float speed = 2.5f;
     [SerializeField] private Vector2 hitbox = new (0.5f, 0.5f);
+
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip deathSound;
+    [SerializeField] private AudioClip victorySound;
     // [SerializeField] private AudioSource footstepsAudioSource;
     // [SerializeField] private AudioSource finalFootstepAudioSource;  
     //private bool hasPlayedFinalFootstep;
@@ -34,11 +38,47 @@ public class Player : MonoBehaviour
         }
     }
 
+    public void OnGoal()
+    {
+        if (!startFollowMouse) return;
+        startFollowMouse = false;
+        audioSource.clip = victorySound;
+        audioSource.Play();
+        
+        InvokeRepeating(nameof(FlashPlayer), 0f, 0.2f);
+        StartCoroutine(WaitForVictorySFX());
+    }
+
     public void OnDeath()
     {
         if (!startFollowMouse) return;
+        startFollowMouse = false;
+        audioSource.clip = deathSound;
+        audioSource.Play();
+        
+        InvokeRepeating(nameof(FlashPlayer), 0f, 0.05f);
+        StartCoroutine(WaitForDeathSFX());
+    }
+
+    private void FlashPlayer()
+    {
+        var sprite = transform.GetChild(0).GetComponent<SpriteRenderer>();
+        
+        sprite.enabled = !sprite.enabled;
+    }
+
+    private IEnumerator WaitForDeathSFX()
+    {
+        yield return new WaitForSeconds(audioSource.clip.length);
         GameManager.Instance.RestartLevel();
     }
+    
+    private IEnumerator WaitForVictorySFX()
+    {
+        yield return new WaitForSeconds(audioSource.clip.length);
+        GameManager.Instance.LoadNextLevel();
+    }
+
 
     // Update is called once per frame
     void Update()
