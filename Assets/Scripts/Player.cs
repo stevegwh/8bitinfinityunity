@@ -7,12 +7,12 @@ using UnityEngine.InputSystem;
 public class Player : MonoBehaviour
 {
     private Vector3 prevPos;
-    private bool startFollowMouse;
-    private readonly float speed = 2.5f;
+    public bool startFollowMouse;
+    [SerializeField] private float speed = 2.5f;
     [SerializeField] private Vector2 hitbox = new (0.5f, 0.5f);
     // [SerializeField] private AudioSource footstepsAudioSource;
     // [SerializeField] private AudioSource finalFootstepAudioSource;  
-    private bool hasPlayedFinalFootstep;
+    //private bool hasPlayedFinalFootstep;
     private void Awake()
     {
         prevPos = transform.position;

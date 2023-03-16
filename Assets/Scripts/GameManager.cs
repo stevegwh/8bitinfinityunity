@@ -22,6 +22,8 @@ using UnityEngine.SceneManagement;
  
 public class GameManager : MonoBehaviour
 {
+    // Has the level been restarted?
+    public static int levelRestartCounter;
     private  int counter;
     // This is really the only blurb of code you need to implement a Unity singleton
     private static GameManager _Instance;
@@ -45,12 +47,12 @@ public class GameManager : MonoBehaviour
             return _Instance;
         }
     }
- 
-    public void OnGoal()
-    {
-        Debug.Log("GOAL REACHED!");
-        LoadNextLevel();
-    }
+
+    // public void OnGoal()
+    // {
+    //     levelRestartFlag = false;
+    //     LoadNextLevel();
+    // }
 
     public void StartGame()
     {
@@ -60,8 +62,8 @@ public class GameManager : MonoBehaviour
 
     public void RestartLevel()
     {
+        levelRestartCounter++;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        //Cursor.visible = true;
     }
 
     public void QuitGame()
@@ -71,6 +73,7 @@ public class GameManager : MonoBehaviour
 
     public void LoadNextLevel()
     {
+        levelRestartCounter = 0;
         var current = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(current + 1);
         //Cursor.visible = true;

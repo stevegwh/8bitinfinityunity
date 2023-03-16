@@ -129,7 +129,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1696857728691772399, guid: 5ebc977cc9a0b8147b4bc786db2ea7dd, type: 3}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: OnGoal
+        m_MethodName: LoadNextLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
