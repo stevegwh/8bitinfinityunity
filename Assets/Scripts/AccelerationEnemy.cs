@@ -18,10 +18,10 @@ public class AccelerationEnemy : MonoBehaviour
     }
 
 
-    void Update()
+    void FixedUpdate()
     {
         if (!startPatrol) return;
-        velocity += acceleration * Time.deltaTime;
+        velocity += acceleration * Time.fixedDeltaTime;
         //velocity = new Vector2(Mathf.Clamp(velocity.x, 0f, maxVelocity.x), 
             //Mathf.Clamp(velocity.y, 0f, maxVelocity.y));
 
