@@ -3350,7 +3350,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1864186186822088803, guid: 063ce529761ad62488308056c0af0171, type: 3}
       propertyPath: m_text
-      value: Click the mouse to start
+      value: I thought this game had cats?
       objectReference: {fileID: 0}
     - target: {fileID: 1864186187695894694, guid: 063ce529761ad62488308056c0af0171, type: 3}
       propertyPath: m_Pivot.x

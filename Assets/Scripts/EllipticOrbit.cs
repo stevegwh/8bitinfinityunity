@@ -18,8 +18,8 @@ public class EllipticOrbit : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        x = 0;
-        y = 0;
+        x = transform.position.x;
+        y = transform.position.y;
     }
 
     // Update is called once per frame

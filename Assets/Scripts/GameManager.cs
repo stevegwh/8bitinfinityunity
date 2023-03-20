@@ -22,6 +22,9 @@ using UnityEngine.SceneManagement;
  
 public class GameManager : MonoBehaviour
 {
+    public static float gameTimer;
+
+    public static bool gameStarted;
     // Has the level been restarted?
     public static int levelRestartCounter;
     private  int counter;
@@ -56,8 +59,22 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
+        gameStarted = true;
         GetComponent<AudioSource>().Play();
         LoadNextLevel();
+    }
+
+    public void StopMusic()
+    {
+        GetComponent<AudioSource>().Stop();
+
+    }
+
+    public void RestartGame()
+    {
+        gameStarted = false;
+        gameTimer = 0;
+        SceneManager.LoadScene(0);
     }
 
     public void RestartLevel()
@@ -77,5 +94,12 @@ public class GameManager : MonoBehaviour
         var current = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(current + 1);
         //Cursor.visible = true;
+    }
+
+    void Update()
+    {
+        if (!gameStarted) return;
+        gameTimer += Time.deltaTime;
+        Debug.Log(gameTimer);
     }
 }
